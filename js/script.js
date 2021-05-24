@@ -46,7 +46,7 @@ button.addEventListener("click", function (e) {
 
 const addToTable = function () {
   const tr = document.createElement("tr");
-  for (let book in myBooks) {
+  for (let book of myBooks) {
     console.log(book.title);
     const rowContents = `<td>${book.title}</td><td>${book.author}</td><td>${book.pages}</td>`;
     tr.innerHTML = rowContents;
